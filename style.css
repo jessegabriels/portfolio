@@ -2,6 +2,16 @@ img {
     width: 85%;
     height: auto;
     border-radius: 20px;
+    margin: auto;
+    display: block;
+}
+
+#gezicht {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: -50px;
 }
 
 .jumbotron p{
