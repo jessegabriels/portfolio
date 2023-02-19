@@ -1,0 +1,9 @@
+img {
+    width: 85%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.jumbotron p{
+    color: black;
+}
