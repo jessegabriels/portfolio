@@ -17,3 +17,8 @@ img {
 .jumbotron p{
     color: black;
 }
+
+.centermain{
+    max-width: 1300px;
+    margin: auto;
+}

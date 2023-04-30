@@ -5,14 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Jesse Gabriëls</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="bg-dark text-light">
+<body class="bg-dark text-light centermain">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Portfolio</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -37,6 +35,8 @@
 
   <div class="container my-5" id="projects">
     <h1>Projecten</h1>
+    <p>Op deze pagina kan je een aantal projecten vinden die ik afgelopen twee jaar heb gemaakt.</p>
+    <hr>
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <h2>Robotvoetbal</h2>
@@ -49,21 +49,33 @@
         Het design van de robot werkt met een klik systeem. De verschillende onderdelen kunnen makkelijk in en uit elkaar worden gehaald.
          De leerlingen kunnen zo op een leuke manier in contact komen met IT.
         </p>
-        <p><a href="https://youtu.be/-vDtlM7xHeM">Bekijk hier de video!</a></p>
+        <p>
+          Om het volledige idee van dit project uit te voeren, zijn we met onze groep de robots gaan voorstellen in een middelbare school. 
+          Dit hebben we gedaan voor een klas elektriciteit-elektronica in het 6de jaar aan SILA Westerlo.
+        </p>
+        <p>
+          
+        </p>
         
       </div>
-      <span class="col-md-6 col-sm-12">
+      <div class="col-md-6 col-sm-12">
        <picture>
         <img src="images/robot.jpg" alt="robot">
         </picture>
-      </span>
-      <div>
-        <iframe src="https://www.youtube.com/watch?v=-vDtlM7xHeM" title="Vimeo video" allowfullscreen></iframe>
+      
       </div>
+      
+      <!-- <video class="w-100" muted controls>
+        <source src="/Video/robotvoetbal.mp4" type="video/mp4" />
+      </video> -->
+    
+
+
     </div>
     <br>
+    <hr>
     <div class="row">
-      <span class="col-12">
+      <div class="col-12">
         <h2>Gezichtsherkennings camera</h2>
         <p>Een camera met gezichtherkenning was één van mijn eerste projecten op de hoge school van Thomas More. Zoals de naam zelf zegt. Het is een camera die gezichten kan herkennen.
           Het doel van dit project is om de camera ergens bij een deur te hangen. Met behulp van Machine Learning kan je enkele foto's nemen van de gezichten van je medebewoners.
@@ -76,14 +88,80 @@
           Er kan ook worden uitgebreid op postbezorging. Vanwege Covid-19 worden pakketjes nu aan de deur gezet. De camera kan mogelijks ook detecteren dat een pakketje aan de deur staat
           en vervolgens een melding sturen.
         </p>
-        <p><a href="https://youtu.be/r-cksD4mRp0">Bekijk hier de video!</a></p>
-        <span>
+        <div class="col-sm-12 col-md-8 mx-auto d-block">
         <picture>
           <img id="gezicht" src="images/gezichtsherkenning.jpg" alt="gezichtherkennings camera">
         </picture>
-      </span>
-      </span>
+      </div>
+      <!-- <video class="w-100" muted controls>
+        <source src="/Video/gezichtsherkenning.mp4" type="video/mp4" />
+      </video> -->
+    </div>
+      
 
     </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-12 col-md-7">
+          <h2>AgroSense</h2>
+          <p>Voor het vak Embedded Devices Essentials hebben we dit jaar ook een project gemaakt. We kregen een aantal opties aangeboden en ik heb met mijn groep gekozen voor het volgende project:</p>
+          <p>
+            De probleemstelling is dat landbouwers in Tanzania heel vaak te veel of te weinig water aan hun gewassen geven. Soms is het ook zo dat de landbouwer vele kilometers moet afleggen 
+            om er vervolgens achter te komen dat zijn gewassen geen water nodig hebben. Om dit op te lossen gaan wij het volgende systeem maken. 
+          </p>
+          <p>
+            AgroSense is een systeem dat een aantal metingen uitvoert om het halfuur. De metingen die gedaan worden zijn: temperatuur, luchtvochtigheid, luchtdruk, methaangas en vochtigheid op 
+            twee niveau's. Deze metingen worden doorgestuurd naar de landbouwer zodat hij of zij niet langer tijd hoeft te verdoen om naar hun land te wandelen met water. Om er voor te zorgen dat 
+            systeem volledig 'off-grid' kan gebruikt worden, hebben we het uitgerust met een zonnepaneel en een batterij. Hierdoor kan het systeem een lange tijd zonder zon.
+            Omdat we er vanuit gaan dat niet iedereen kennis heeft van elektronica hebben we er voor gekozen om een klik systeem te maken. Wij produceren een PCB (Printed Curcuit Board)
+            met een aantal aansluitingen voor de sensoren. Hierdoor is het enorm makkelijk te monteren. Het enige wat er moet gebeuren is de juiste sensor aan de juiste connector hangen.
+            De landbouwer kan dit pakket zelf samenstellen. Als een bepaalde sensor niet nodig is, kan deze simpel weg worden weggelaten.
+          </p>
+          <p>
+            Dit project gaat verder dan alleen maar Tanzania. Dit systeem kan over heel de wereld worden gebruikt. Hierdoor hopen wij een steentje bij te dragen aan een effeciëntere en 
+            ecologische landbouw.
+          </p>
+      </div>
+      <div class="col-sm-12 col-md-5">
+        <img src="images/pcb.png" alt="PCB">
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-12">
+        <h2>PomPaul</h2>
+        <p>
+          Voor het vak Project IoT hebben we dit jaar de opdracht gekregen om de pompoenserre van Paul Boonen te automatiseren. Omdat Paul jaarlijks meedoet aan de wedstrijd om de grootste
+          en zwaarste pompoen te kweken, willen wij hem hierbij helpen. Vorig jaar hebben onze voorgangers in 2IoT dit ook al gedaan. Jammer genoeg zijn er een aantal dingen die stuk 
+          zijn gegaan. Zowel door slijtage van componenten en een nieuwsgierige eigenaar. Om dit op te lossen gaan we er dit jaar alles aan doen om de serre perfect af te werken.
+        </p>
+        <p>
+          Paul heeft ons een aantal basisvereisten doorgegeven. Zo moeten er een aantal sensoren in de serre hangen die de temperatuur, CO2 en het licht meet. Op basis van deze waardes
+          worden er een aantal componenten aangestuurd. Als het bijvoorbeeld te warm is, zullen de ramen automatisch opengaan.
+        </p>
+        <p>
+          Verder zijn er ook nog een aantal routines die dagelijks moeten worden uitgevoerd. 
+        </p>
+        <ul>
+          <li>
+            Elke ochtend moet de dauw uit te serre worden getrokken. Om dit te doen zullen de ramen en de deuren 
+            opengaan en zullen er 2 ventilatoren aangaan. 
+          </li>
+          <li>
+            In de nacht moet er water worden opgepompt uit te grond. Dit water wordt opgeslagen in 2 vaten van 1000L. Vervolgens kan het water overdag wat opwarmen en verdeelt worden over de pompoenen.
+          </li>
+        </ul>
+        <p>
+          Al deze informatie van de sensoren en de manuele aansturingen zullen beschikbaar zijn in een app met een database. In deze app kan je in voor elke waarde een grafiek zien zodat
+          je de serre kan monitoren. Als Paul beslist om zelf de ramen manueel te openen, kan dit met een simpele druk op de knop. Verder is er ook nog een livestream te zien. Hierdoor
+          kan je als je niet thuis ben toch in de serre kijken.
+        </p>
+        <p>
+          Een extratje dat ikzelf heb gemaakt is een schaalmodel van Paul zijn serre. Hiervoor heb ik een aantal foto's genomen van de serre en vervolgens heb ik zelf zelf nagebouwd 
+          met een softwareprogramma. Hierna heb ik de serre en de toebehoren gemaakt met mijn 3D-printers. Om alles zo correct mogelijk te maken heb ik alles ook geschilderd. 
+        </p>
+      </div>
+    </div>
+    <hr>
   </div>
 
