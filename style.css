@@ -16,6 +16,10 @@ hr{
     color: #5161ce;
 }
 
+.isRounded{
+    border-radius: 10px;
+}
+
 
 /* ---------horizontal-navbar-menu-----------*/
 #navbar-animmenu {
