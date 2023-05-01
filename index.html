@@ -5,41 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Jesse Gabriëls</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="bg-dark text-light">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+<body class="bg-dark text-light centermain">
+  <div id="navbar-animmenu">
+    <ul class="show-dropdown main-navbar">
+        <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+        <li>
+          <a href="#">Portfolio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutme.html">Over mij</a>
+        <li class="active">
+            <a href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projecten</a>
+        <li>
+            <a href="aboutme.html">Over mij</a>
         </li>
-      </ul>
-    </div>
-  </nav>
+        <li>
+            <a href="projects.html">Projecten</a>
+        </li>   
+    </ul>
+  </div>
+  <br>
+  <br>
+  <br>
 
-  <div class="container my-5">
-    <div class="jumbotron row">
+  <div class="container my-5" id="about-me">
+    <div class="mt-4 p-5 bg-white text-secondary rounded row">
       <div class="col-8  text-secondary">
         <h1 class="display-4">Portfolio Jesse Gabriëls</h1>
-        <p class="lead">Hier vindt u informatie over mijn ervaring met IoT en de projecten die ik heb voltooid.</p>
-        
+        <p>Hier vindt u informatie over mijn ervaring met IoT en de projecten die ik heb voltooid.</p>
         <hr class="my-4">
         <p>Gebruik de navigatiebalk om de site te verkennen.</p>
     </div>
@@ -47,11 +45,10 @@
       <img src="images/1665829447680.jfif" alt="">
     </div>
     </div>
-  </div>
+    <br>
+    <hr size="7">
 
-  <div class="container my-5" id="about-me">
     <h2>Over mij</h2>
-    <hr>
     <p>
       Mijn naam is Jesse Gabriëls en ik ben een student aan Thomas More Geel. Ik ben gepassioneerd door IoT en heb de
       afgelopen jaren aan projecten in dit vakgebied gewerkt. Deze webpagina dient als bewijs van mijn prestaties tijdens mijn Internet of Things schoolcarrière.
@@ -63,5 +60,8 @@
     <p>
       Als u vragen heeft of contact met mij wilt opnemen, aarzel dan niet om dit te doen via de verschillende kanalen op de "Over mij" pagina.
     </p>
+  
   </div>
+  <script src="scripts/navbar.js"></script>
+</body>
 
