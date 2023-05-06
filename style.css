@@ -3,6 +3,7 @@
 
 body{
 	font-family: 'Roboto', sans-serif;
+	margin-bottom: 60px;
 }
 * {
 	margin: 0;
@@ -26,7 +27,8 @@ hr{
 	background: #5161ce;
 	float: left;
 	overflow: hidden;
-	position: relative;
+	position: sticky;
+	top: 0;
 	padding: 10px 0px;
     width: 100%;
     border-bottom-left-radius: 10px;
@@ -79,6 +81,12 @@ hr{
 	font-weight: 900;
 	transition: 0.5s;
 }
+
+#navbar-animmenu a:hover{
+	color: #ffffff;
+	transition: all 0.4s;
+}
+
 
 #navbar-animmenu .active>a:not(:only-child):after {
 	transform: rotate(90deg);
@@ -155,15 +163,29 @@ img {
     margin: auto;
 }
 
-table {
-    width: 100%;
-    border-radius: 0px 0px 10px 10px
-}
+.circle-btn {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	padding-left: 10px;
+	line-height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: #5161ce;
+	color: #fff;
+	font-size: 24px;
+	transition: background-color 0.3s ease-in-out;
+  }
+  
+  .circle-btn:hover {
+	background-color: #ffffff;
+	color:  #5161ce;
+  }
+  
+  .circle-btn i {
+	display: inline-block;
+	margin-top: 8px;
+  }
 
-td {
-    width: 33%;
-    height: 30px;
-    text-align: center;
 
-}
 
