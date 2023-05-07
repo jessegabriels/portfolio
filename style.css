@@ -363,13 +363,3 @@ width:100%;
 #sum ul{
 	list-style: none;
 }
-
-.disabled-link {
-	pointer-events: none;
-	color: #ffffff;
-	opacity: 1;
-  }
-
-  
-
-
