@@ -17,8 +17,9 @@
     <ul class="show-dropdown main-navbar">
         <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
         <li>
-          <a href="" aria-disabled="true">Portfolio</a>
+          <a href="" aria-disabled="true" disabled>Portfolio</a>
         </li>
+        
         <li class="active">
             <a href="#">Home</a>
         </li>
@@ -30,7 +31,6 @@
         </li>   
     </ul>
   </div>
-
   <br>
   <br>
   <br>
@@ -71,5 +71,13 @@
   
   </div>
   <script src="scripts/navbar.js"></script>
+  <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+  
 </body>
 
