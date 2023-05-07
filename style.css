@@ -364,6 +364,11 @@ width:100%;
 	list-style: none;
 }
 
+.disabled-link {
+	pointer-events: none;
+	color: #ffffff;
+	opacity: 1;
+  }
 
   
 
