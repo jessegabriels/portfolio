@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-
 body{
 	font-family: 'Roboto', sans-serif;
 	margin-bottom: 60px;
 }
+
 * {
 	margin: 0;
 	padding: 0;
 }
+
 i {
 	margin-right: 10px;   
 }
@@ -21,8 +22,6 @@ hr{
     border-radius: 10px;
 }
 
-
-/* ---------horizontal-navbar-menu-----------*/
 #navbar-animmenu {
 	background: #5161ce;
 	float: left;
@@ -67,7 +66,6 @@ hr{
 	transition: all 0.7s;
 }
 
-
 #navbar-animmenu a:not(:only-child):after {
 	content: "\f105";
 	position: absolute;
@@ -87,10 +85,10 @@ hr{
 	transition: all 0.4s;
 }
 
-
 #navbar-animmenu .active>a:not(:only-child):after {
 	transform: rotate(90deg);
 }
+
 .hori-selector{
 	display:inline-block;
 	position:absolute;
@@ -103,6 +101,7 @@ hr{
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 }
+
 .hori-selector .right,
 .hori-selector .left{
 	position: absolute;
@@ -111,12 +110,15 @@ hr{
 	background-color: #fff;
 	bottom: 10px;
 }
+
 .hori-selector .right{
 	right: -25px;
 }
+
 .hori-selector .left{
 	left: -25px;
 }
+
 .hori-selector .right:before,
 .hori-selector .left:before{
 	content: '';
@@ -126,10 +128,12 @@ hr{
     border-radius: 50%;
     background-color: #5161ce;
 }
+
 .hori-selector .right:before{
 	bottom: 0;
     right: -25px;
 }
+
 .hori-selector .left:before{
 	bottom: 0;
     left: -25px;
@@ -180,13 +184,13 @@ img:hover {
   }
   
 .circle-btn:hover {
-background-color: #ffffff;
-color:  #5161ce;
+	background-color: #ffffff;
+	color:  #5161ce;
 }
 
 .circle-btn i {
-display: inline-block;
-margin-top: 8px;
+	display: inline-block;
+	margin-top: 8px;
 }
 
 .btnCV{
@@ -207,7 +211,7 @@ margin-top: 8px;
 }
 
 .fa-users, .fa-user{
-color:  #5161ce;
+	color:  #5161ce;
 }
 
 
@@ -266,9 +270,9 @@ color:  #5161ce;
 			filter: blur(0px);
 		  	opacity: 1;
 		}
-	  }
+	}
 
-	  .wobble-hor-bottom {
+	.wobble-hor-bottom {
 		animation: wobble-hor-bottom 0.8s both;
 		animation-delay: 40s;
 	}
@@ -294,7 +298,26 @@ color:  #5161ce;
 		75% {
 			transform: translateX(-6px) rotate(-1.2deg);
 		}
-	  }
+	}
+
+	.tracking-in-contract-bck-top {
+		animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	}
+
+	@keyframes tracking-in-contract-bck-top {
+	0% {
+		letter-spacing: 1em;
+		transform: translateZ(400px) translateY(-300px);
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		transform: translateZ(0) translateY(0);
+		opacity: 1;
+	}
+	}
 
 }
 
@@ -325,15 +348,21 @@ color:  #5161ce;
 	width: 0;
 	height: 3px;
 	transition: all 0.3s ease-in-out;
-  }
+}
   
-  .youtubelink:hover {
-   background-position: 0;
-  }
-  
-  .youtubelink:hover::before {
-	width:100%;
-  }
+.youtubelink:hover {
+background-position: 0;
+}
+
+.youtubelink:hover::before {
+width:100%;
+}
+
+
+
+#sum ul{
+	list-style: none;
+}
 
 
   
